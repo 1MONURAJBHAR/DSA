@@ -5,7 +5,7 @@ import java.util.List;
 /*
  Problem:
  Rearrange array elements so that positive and negative numbers appear alternately.
- 
+
  Note:
  This file demonstrates multiple variants.
  - Some solutions work ONLY when the number of positives equals the number of negatives.
