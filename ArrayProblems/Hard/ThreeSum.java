@@ -49,7 +49,63 @@ public class ThreeSum {
 
 
 
+/*// Optimal 3-Sum using sorting + two pointers
+// Finds all unique triplets whose sum = 0
+// Time Complexity: O(n^2)
+// Space Complexity: O(1) extra (excluding result list)
 
+static List<List<Integer>> TripletsOptimal(int[] arr) {
+
+    // Step 1: Sort the array → required for two-pointer search
+    // and duplicate skipping
+    Arrays.sort(arr);
+
+    int n = arr.length;
+    List<List<Integer>> result = new ArrayList<>();
+
+    // Step 2: Fix the first element of the triplet
+    for (int i = 0; i < n; i++) {
+
+        // Skip duplicate values for first element
+        if (i > 0 && arr[i] == arr[i - 1]) continue;
+
+        // Step 3: Two-pointer search for remaining two elements
+        int j = i + 1;      // left pointer
+        int k = n - 1;      // right pointer
+
+        while (j < k) {
+
+            // Compute current sum
+            int sum = arr[i] + arr[j] + arr[k];
+
+            if (sum < 0) {
+                // Need larger sum → move left pointer right
+                j++;
+            }
+            else if (sum > 0) {
+                // Need smaller sum → move right pointer left
+                k--;
+            }
+            else {
+                // Found valid triplet
+                result.add(Arrays.asList(arr[i], arr[j], arr[k]));
+
+                // Move both pointers
+                j++;
+                k--;
+
+                // Skip duplicates for second element
+                while (j < k && arr[j] == arr[j - 1]) j++;
+
+                // Skip duplicates for third element
+                while (j < k && arr[k] == arr[k + 1]) k--;
+            }
+        }
+    }
+
+    return result;
+}
+*/
 
 
 
