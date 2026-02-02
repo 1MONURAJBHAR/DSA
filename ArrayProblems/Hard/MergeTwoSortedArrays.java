@@ -22,7 +22,6 @@ public class MergeTwoSortedArrays {
     */
 
 
-
     //T.C: O((n + m) * log₂(n + m)), S.C: O(1)
     static void mergeOptimal(long[] arr1, long[] arr2, int n, int m) {
 
