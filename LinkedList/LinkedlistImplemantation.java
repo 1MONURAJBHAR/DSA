@@ -1,3 +1,11 @@
+//1. Traversal
+//2. Insert (basic)
+//3. Delete (basic)
+//4. Reverse Linked List ⭐
+//5. Find Middle ⭐
+//6. Nth from end
+//7. Detect cycle
+
 public class LinkedlistImplemantation {
 
     // Node class
