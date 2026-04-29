@@ -25,7 +25,7 @@ public class findMiddleElement {
     Node fast = head.next;  or  fast.next.next = null; --> inside while loop, both have same meaning
     * */
 
-    // Function to find middle node
+    // Function to find middle node, returns second middle node
     public static Node findMiddle(Node head) {
         Node slow = head;
         Node fast = head;
