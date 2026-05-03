@@ -63,6 +63,10 @@ public class ArrayImplemantationOfQueue2 {
             }
             System.out.println();
         }
+
+        public int size(){
+            return size;
+        }
     }
 
     public static void main(String[] args) {
@@ -80,5 +84,7 @@ public class ArrayImplemantationOfQueue2 {
         q.display();   // 20 30
 
         System.out.println("Front: " + q.peek());
+
+        System.out.println("Size of queue is : " + q.size());
     }
 }

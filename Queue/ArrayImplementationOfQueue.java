@@ -72,6 +72,10 @@ public class ArrayImplementationOfQueue {
             }
             System.out.println();
         }
+
+        public int size(){
+            return size;
+        }
     }
 
     public static void main(String[] args) {
@@ -92,5 +96,6 @@ public class ArrayImplementationOfQueue {
         q.display();
 
         System.out.println("Front element: " + q.peek());
+        System.out.println("Size of queue is : " + q.size());
     }
 }
