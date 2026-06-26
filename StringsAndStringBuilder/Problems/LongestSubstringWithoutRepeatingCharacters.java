@@ -32,7 +32,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
     }
 
 
-    public static int lengthOfLongestSubstring2(String s) {
+   /* public static int lengthOfLongestSubstring2(String s) {
 
         int start = 0;
         int end = 0;
@@ -57,5 +57,5 @@ public class LongestSubstringWithoutRepeatingCharacters {
         }
 
         return maxLength;
-    }
+    }*/
 }
