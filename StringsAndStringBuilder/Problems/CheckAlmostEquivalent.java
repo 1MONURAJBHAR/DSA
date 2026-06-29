@@ -1,5 +1,5 @@
 public class CheckAlmostEquivalent {
-
+// Check Whether Two Strings are Almost Equivalent, "Leetcode NO: 2068"
     public boolean checkAlmostEquivalent(String word1, String word2) {
 
         int[] freq = new int[26];
