@@ -21,32 +21,6 @@ public class GroupAnagrams {
         return new ArrayList<>(map.values());
     }
 
-    //Using Character Frequency (Optimal O(N × K))
-    public static List<List<String>> groupAnagrams2(String[] strs) {
-
-        HashMap<String, List<String>> map = new HashMap<>();
-
-        for (String str : strs) {
-
-            int[] count = new int[26];
-
-            for (char c : str.toCharArray()) {
-                count[c - 'a']++;
-            }
-
-            StringBuilder key = new StringBuilder();
-
-            for (int num : count) {
-                key.append("#").append(num);
-            }
-
-            map.putIfAbsent(key.toString(), new ArrayList<>());
-            map.get(key.toString()).add(str);
-        }
-
-        return new ArrayList<>(map.values());
-    }
-
     public static void main(String[] args) {
 
         String[] strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
