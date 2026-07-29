@@ -53,7 +53,8 @@ public class KokoEatingBananas {
             // Example:
             // pile = 7, speed = 3
             // Hours = ceil(7 / 3) = 3
-            totalHours += Math.ceil((double) pile / k);
+            //totalHours += Math.ceil((double) pile / k);  // or
+            totalHours += (pile + k - 1) / k;
         }
 
         // Return true if all piles can be finished within h hours.
