@@ -151,6 +151,7 @@ public class ImplementLinkedList {
         ll.display();
         System.out.println();
         System.out.println("Size of linked list is: "+ll.size());
+        System.out.println(ll.getAt(0));
     }
 
 }
